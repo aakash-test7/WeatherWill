@@ -363,76 +363,76 @@
             text-align: center;
         }
         .weather-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-block: 20px;
-}
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-block: 20px;
+        }
 
-/* Equal space distribution */
-.weather-container > * {
-    flex: 1;
-    min-width: 0;
-}
+        /* Equal space distribution */
+        .weather-container > * {
+            flex: 1;
+            min-width: 0;
+        }
 
-/* Location info styling */
-.location-info {
-    text-align: right;
-    padding-right: 30px;
-}
+        /* Location info styling */
+        .location-info {
+            text-align: right;
+            padding-right: 30px;
+        }
 
-.time-info {
-    margin-top: 8px;
-    font-size: 0.9em;
-    color: #555;
-}
+        .time-info {
+            margin-top: 8px;
+            font-size: 0.9em;
+            color: #555;
+        }
 
-/* Centered weather image */
-.weather-img-container {
-    display: flex;
-    justify-content: center;
-}
+        /* Centered weather image */
+        .weather-img-container {
+            display: flex;
+            justify-content: center;
+        }
 
-.weather-img {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-}
+        .weather-img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+        }
 
-/* Temperature box styling */
-.weather-box {
-    text-align: left;
-    padding-left: 30px;
-}
+        /* Temperature box styling */
+        .weather-box {
+            text-align: left;
+            padding-left: 30px;
+        }
 
-.temperature {
-    display: inline-block; /* Keeps temperature and °C on same line */
-    font-size: 2.5em;
-    font-weight: bold;
-    vertical-align: middle;
-}
+        .temperature {
+            display: inline-block; /* Keeps temperature and °C on same line */
+            font-size: 2.5em;
+            font-weight: bold;
+            vertical-align: middle;
+        }
 
-.temperature sup {
-    font-size: 0.6em;
-    vertical-align: super;
-    margin-left: 2px;
-}
+        .temperature sup {
+            font-size: 0.6em;
+            vertical-align: super;
+            margin-left: 2px;
+        }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .weather-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .location-info, .weather-box {
-        text-align: center;
-        padding: 0;
-    }
-    .weather-img-container {
-        order: -1;
-    }
-}
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .weather-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .location-info, .weather-box {
+                text-align: center;
+                padding: 0;
+            }
+            .weather-img-container {
+                order: -1;
+            }
+        }
     </style>
 </head>
 
@@ -645,12 +645,9 @@
         const container = document.querySelector('.container');
 
         async function checkWeather(city) {
-            const api_key = "12569cfe411f3f308560966e7d71f0d2";
-            const url = `http://api.weatherstack.com/current?access_key=${api_key}&query=${city}`;
-
-            try {
-                const response = await fetch(url);
-                const weather_data = await response.json();
+        try {
+            const response = await fetch(`/api/weather?location=${city}`);
+            const weather_data = await response.json();
 
                 if (weather_data.error) {
                     locationNotFound.style.display = "flex";
@@ -788,6 +785,5 @@
             }
         });
     </script>
-    <script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous"></script>
 </body>
 </html>

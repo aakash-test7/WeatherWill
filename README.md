@@ -6,7 +6,7 @@
 
 
 🔗 **Live Demo:** [View WeatherWill](https://aakash-test7.github.io/WeatherWill/)  
-🎥 **Video Demo:** [Watch Demo](https://youtu.be/om6dYbI7RmY?feature=shared)
+
 [![WeatherWill Demo Video](https://img.youtube.com/vi/om6dYbI7RmY/maxresdefault.jpg)](https://www.youtube.com/watch?v=om6dYbI7RmY)
 
 

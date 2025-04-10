@@ -646,7 +646,7 @@
 
         async function checkWeather(city) {
             const api_key = "12569cfe411f3f308560966e7d71f0d2";
-            const url = `http://api.weatherstack.com/current?access_key=${api_key}&query=${city}`;
+            const url = `https://api.weatherstack.com/current?access_key=${api_key}&query=${encodeURIComponent(city)}`;
 
             try {
                 const response = await fetch(url);
@@ -788,6 +788,5 @@
             }
         });
     </script>
-    <script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous"></script>
 </body>
 </html>

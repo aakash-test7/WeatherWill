@@ -4,12 +4,10 @@
 
 ![WeatherWill Screenshot](images/snow.png)
 
----
 
 🔗 **Live Demo:** [View WeatherWill](https://aakash-test7.github.io/WeatherWill/)  
 🎥 **Video Demo:** [Watch Demo](https://your-video-demo-link-here.com)
 
----
 
 ## Features
 
@@ -29,7 +27,6 @@
 - **Icons**: Font Awesome, Google Material Icons
 - **Hosting**: GitHub Pages
   
----
 
 ## API Information
 
@@ -62,7 +59,6 @@ WeatherWill/
 └── sun-cloud.png       # Application favicon
 ```
 
----
 
 ## Setup Instructions
 
@@ -75,7 +71,6 @@ WeatherWill/
 
 3. Alternatively, access the live version on GitHub Pages
 
----
 
 ## Usage
 
@@ -83,7 +78,6 @@ WeatherWill/
 2. Click the search button or press Enter
 3. View comprehensive weather information
 
----
 
 ## Customization
 
@@ -102,7 +96,6 @@ To customize WeatherWill:
 - Free Weatherstack API has limited requests
 - Air quality data not available for all locations
 
----
 
 ## Future Enhancements
 
@@ -111,7 +104,6 @@ To customize WeatherWill:
 - Temperature unit toggle (C/F)
 - Geolocation for automatic location detection
 
----
 
 ## License
 
